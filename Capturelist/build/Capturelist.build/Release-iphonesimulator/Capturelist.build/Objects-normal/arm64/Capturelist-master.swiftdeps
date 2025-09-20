@@ -1,0 +1,23 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "f59e1727ec1dac9ef77cae570cb709f68b89a3cb275dfae632e12162e3671a7c"
+build_start_time: [1758375604, 167548000]
+build_end_time: [1758375606, 392676000]
+inputs:
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/CapturelistApp.swift": [1756380588, 562677145]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/ContentView.swift": [1755947376, 516945526]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Models/Persistence.swift": [1755947247, 851853494]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Views/FolderDetailView.swift": [1755951715, 162315904]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Views/MainView.swift": [1758375592, 657886164]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Views/PlaceholderView.swift": [1755947247, 872515761]
+  ? "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphonesimulator/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/CaptureList+CoreDataModel.swift"
+  : [1758375442, 95509374]
+  ? "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphonesimulator/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Folder+CoreDataClass.swift"
+  : [1758375442, 97604480]
+  ? "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphonesimulator/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Folder+CoreDataProperties.swift"
+  : [1758375442, 97982192]
+  ? "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphonesimulator/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Screenshot+CoreDataClass.swift"
+  : [1758375442, 96766679]
+  ? "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphonesimulator/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Screenshot+CoreDataProperties.swift"
+  : [1758375442, 97096683]
+  ? "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphonesimulator/Capturelist.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1758375441, 598932310]

@@ -1,0 +1,56 @@
+{
+  "source": "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/CaptureListWidget/CaptureListWidget.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Time:",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Favorite Emoji:",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer Name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer Name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer is running",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Favorite Emoji",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 16
+        }
+      }
+    ]
+  },
+  "version": 1
+}

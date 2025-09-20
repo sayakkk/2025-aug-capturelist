@@ -1,0 +1,13 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "f3df810a7e89b844a91aeed9a476fed5cd173e5a74297d1d68a996aad59e80b7"
+build_start_time: [1758375602, 910069000]
+build_end_time: [1758375604, 297408000]
+inputs:
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/CaptureListWidget/AppIntent.swift": [1755947247, 872628012]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/CaptureListWidget/CaptureListWidget.swift": [1755947247, 876702723]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/CaptureListWidget/CaptureListWidgetBundle.swift": [1755947247, 851709658]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/CaptureListWidget/CaptureListWidgetControl.swift": [1755947247, 876665139]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/CaptureListWidget/CaptureListWidgetLiveActivity.swift": [1755947247, 881561068]
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/CaptureListWidget/FolderWidget.swift": [1755947247, 851598449]
+  ? "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphonesimulator/CaptureListWidgetExtension.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1758375437, 862900595]

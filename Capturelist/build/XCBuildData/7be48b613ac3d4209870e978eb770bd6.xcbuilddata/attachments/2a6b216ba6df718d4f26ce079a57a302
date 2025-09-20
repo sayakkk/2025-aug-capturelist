@@ -1,0 +1,70 @@
+{
+  "" : {
+    "const-values" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Capturelist-master.swiftconstvalues",
+    "dependencies" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Capturelist-master.d",
+    "diagnostics" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Capturelist-master.dia",
+    "emit-module-dependencies" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Capturelist-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Capturelist-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Capturelist-master.swiftdeps"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/CapturelistApp.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/CapturelistApp.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/CapturelistApp.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/CapturelistApp.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/ContentView.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Models/Persistence.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Persistence.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Persistence.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Persistence.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Views/FolderDetailView.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/FolderDetailView.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/FolderDetailView.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/FolderDetailView.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Views/MainView.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/MainView.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/MainView.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/MainView.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Views/PlaceholderView.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/PlaceholderView.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/PlaceholderView.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/PlaceholderView.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/CaptureList+CoreDataModel.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/CaptureList+CoreDataModel.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/CaptureList+CoreDataModel.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/CaptureList+CoreDataModel.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Folder+CoreDataClass.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Folder+CoreDataClass.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Folder+CoreDataClass.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Folder+CoreDataClass.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Folder+CoreDataProperties.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Folder+CoreDataProperties.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Folder+CoreDataProperties.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Folder+CoreDataProperties.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Screenshot+CoreDataClass.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Screenshot+CoreDataClass.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Screenshot+CoreDataClass.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Screenshot+CoreDataClass.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/DerivedSources/CoreDataGenerated/CaptureList/Screenshot+CoreDataProperties.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Screenshot+CoreDataProperties.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Screenshot+CoreDataProperties.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/Screenshot+CoreDataProperties.o"
+  },
+  "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/build/Capturelist.build/Release-iphoneos/Capturelist.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

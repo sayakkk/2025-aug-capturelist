@@ -1,0 +1,56 @@
+{
+  "source": "/Users/sayalee/Documents/GitHub/2025-aug-capturelist/Capturelist/Capturelist/Views/FolderDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Photo Permission Required",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Screenshot",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Please grant photo access in Settings to add screenshots.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Screenshot",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 101
+        }
+      }
+    ]
+  },
+  "version": 1
+}
