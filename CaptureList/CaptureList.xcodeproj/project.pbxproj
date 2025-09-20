@@ -7,19 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB7B24122E59D33300E57FDE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7B24112E59D33300E57FDE /* WidgetKit.framework */; };
-		CB7B24142E59D33300E57FDE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7B24132E59D33300E57FDE /* SwiftUI.framework */; };
-		CB7B24252E59D33400E57FDE /* CaptureListWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB7B240F2E59D33300E57FDE /* CaptureListWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CB7B24232E59D33400E57FDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CBF64F172E585C93000C1D70 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB7B240E2E59D33300E57FDE;
-			remoteInfo = CaptureListWidgetExtension;
-		};
 		CBF64F2D2E585C95000C1D70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBF64F172E585C93000C1D70 /* Project object */;
@@ -37,48 +27,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CB7B242A2E59D33400E57FDE /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				CB7B24252E59D33400E57FDE /* CaptureListWidgetExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CB7B240F2E59D33300E57FDE /* CaptureListWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CaptureListWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB7B24112E59D33300E57FDE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		CB7B24132E59D33300E57FDE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		CB7B242E2E59D4FD00E57FDE /* CaptureListWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CaptureListWidgetExtension.entitlements; sourceTree = "<group>"; };
 		CBF64F1F2E585C93000C1D70 /* Capturelist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capturelist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF64F2C2E585C95000C1D70 /* CapturelistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapturelistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF64F362E585C95000C1D70 /* CapturelistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapturelistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CB7B24622E59E79F00E57FDE /* Exceptions for "CaptureListWidget" folder in "CaptureListWidgetExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CB7B240E2E59D33300E57FDE /* CaptureListWidgetExtension */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CB7B24152E59D33300E57FDE /* CaptureListWidget */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CB7B24622E59E79F00E57FDE /* Exceptions for "CaptureListWidget" folder in "CaptureListWidgetExtension" target */,
-			);
-			path = CaptureListWidget;
-			sourceTree = "<group>";
-		};
 		CBF64F212E585C93000C1D70 /* Capturelist */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Capturelist;
@@ -97,15 +57,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CB7B240C2E59D33300E57FDE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB7B24142E59D33300E57FDE /* SwiftUI.framework in Frameworks */,
-				CB7B24122E59D33300E57FDE /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CBF64F1C2E585C93000C1D70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,24 +81,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB7B24102E59D33300E57FDE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CB7B24112E59D33300E57FDE /* WidgetKit.framework */,
-				CB7B24132E59D33300E57FDE /* SwiftUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CBF64F162E585C93000C1D70 = {
 			isa = PBXGroup;
 			children = (
-				CB7B242E2E59D4FD00E57FDE /* CaptureListWidgetExtension.entitlements */,
 				CBF64F212E585C93000C1D70 /* Capturelist */,
 				CBF64F2F2E585C95000C1D70 /* CapturelistTests */,
 				CBF64F392E585C95000C1D70 /* CapturelistUITests */,
-				CB7B24152E59D33300E57FDE /* CaptureListWidget */,
-				CB7B24102E59D33300E57FDE /* Frameworks */,
 				CBF64F202E585C93000C1D70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,7 +97,6 @@
 				CBF64F1F2E585C93000C1D70 /* Capturelist.app */,
 				CBF64F2C2E585C95000C1D70 /* CapturelistTests.xctest */,
 				CBF64F362E585C95000C1D70 /* CapturelistUITests.xctest */,
-				CB7B240F2E59D33300E57FDE /* CaptureListWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,28 +104,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB7B240E2E59D33300E57FDE /* CaptureListWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB7B24272E59D33400E57FDE /* Build configuration list for PBXNativeTarget "CaptureListWidgetExtension" */;
-			buildPhases = (
-				CB7B240B2E59D33300E57FDE /* Sources */,
-				CB7B240C2E59D33300E57FDE /* Frameworks */,
-				CB7B240D2E59D33300E57FDE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CB7B24152E59D33300E57FDE /* CaptureListWidget */,
-			);
-			name = CaptureListWidgetExtension;
-			packageProductDependencies = (
-			);
-			productName = CaptureListWidgetExtension;
-			productReference = CB7B240F2E59D33300E57FDE /* CaptureListWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		CBF64F1E2E585C93000C1D70 /* Capturelist */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF64F402E585C95000C1D70 /* Build configuration list for PBXNativeTarget "Capturelist" */;
@@ -195,12 +111,10 @@
 				CBF64F1B2E585C93000C1D70 /* Sources */,
 				CBF64F1C2E585C93000C1D70 /* Frameworks */,
 				CBF64F1D2E585C93000C1D70 /* Resources */,
-				CB7B242A2E59D33400E57FDE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB7B24242E59D33400E57FDE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CBF64F212E585C93000C1D70 /* Capturelist */,
@@ -268,9 +182,6 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					CB7B240E2E59D33300E57FDE = {
-						CreatedOnToolsVersion = 16.4;
-					};
 					CBF64F1E2E585C93000C1D70 = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -301,19 +212,11 @@
 				CBF64F1E2E585C93000C1D70 /* Capturelist */,
 				CBF64F2B2E585C95000C1D70 /* CapturelistTests */,
 				CBF64F352E585C95000C1D70 /* CapturelistUITests */,
-				CB7B240E2E59D33300E57FDE /* CaptureListWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CB7B240D2E59D33300E57FDE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CBF64F1D2E585C93000C1D70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,13 +241,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CB7B240B2E59D33300E57FDE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CBF64F1B2E585C93000C1D70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,11 +265,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CB7B24242E59D33400E57FDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB7B240E2E59D33300E57FDE /* CaptureListWidgetExtension */;
-			targetProxy = CB7B24232E59D33400E57FDE /* PBXContainerItemProxy */;
-		};
 		CBF64F2E2E585C95000C1D70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CBF64F1E2E585C93000C1D70 /* Capturelist */;
@@ -387,62 +278,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		CB7B24282E59D33400E57FDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = CaptureListWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8LN2TLGS5G;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CaptureListWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CaptureListWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saya.Capturelist.CaptureListWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CB7B24292E59D33400E57FDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = CaptureListWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8LN2TLGS5G;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CaptureListWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CaptureListWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saya.Capturelist.CaptureListWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		CBF64F3E2E585C95000C1D70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -495,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -552,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -568,12 +403,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capturelist/Capturelist.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8LN2TLGS5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앱에서 사진첩 접근 권한이 필요합니다. (스크린샷 포함)\n";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -586,6 +422,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saya.Capturelist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,12 +435,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capturelist/Capturelist.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8LN2TLGS5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앱에서 사진첩 접근 권한이 필요합니다. (스크린샷 포함)\n";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -616,6 +454,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saya.Capturelist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -628,8 +467,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LN2TLGS5G;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saya.CapturelistTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -646,8 +486,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LN2TLGS5G;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saya.CapturelistTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,6 +504,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LN2TLGS5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saya.CapturelistUITests;
@@ -679,6 +521,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LN2TLGS5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saya.CapturelistUITests;
@@ -693,15 +536,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB7B24272E59D33400E57FDE /* Build configuration list for PBXNativeTarget "CaptureListWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB7B24282E59D33400E57FDE /* Debug */,
-				CB7B24292E59D33400E57FDE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CBF64F1A2E585C93000C1D70 /* Build configuration list for PBXProject "Capturelist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

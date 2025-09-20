@@ -91,15 +91,59 @@ struct FolderDetailView: View {
 
 struct ScreenshotView: View {
     var screenshot: Screenshot
+    @State private var image: UIImage?
+    @State private var asset: PHAsset?
     
     var body: some View {
-        Rectangle()
-            .fill(Color.blue.opacity(0.3))
-            .frame(height: 100)
-            .cornerRadius(8)
-            .overlay(
-                Text("Screenshot")
-                    .foregroundColor(.secondary)
-            )
+        Group {
+            if let image = image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 100)
+                    .clipped()
+                    .cornerRadius(8)
+            } else {
+                Rectangle()
+                    .fill(Color.gray.opacity(0.3))
+                    .frame(height: 100)
+                    .cornerRadius(8)
+                    .overlay(
+                        ProgressView()
+                            .scaleEffect(0.8)
+                    )
+            }
+        }
+        .onAppear {
+            loadAssetAndImage()
+        }
+    }
+    
+    private func loadAssetAndImage() {
+        guard let assetID = screenshot.phAssetID else { return }
+        
+        // PHAsset 찾기
+        let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: [assetID], options: nil)
+        guard let phAsset = fetchResult.firstObject else { return }
+        
+        asset = phAsset
+        
+        // 이미지 로드
+        let manager = PHImageManager.default()
+        let options = PHImageRequestOptions()
+        options.isSynchronous = false
+        options.deliveryMode = .opportunistic
+        options.resizeMode = .exact
+        
+        manager.requestImage(
+            for: phAsset,
+            targetSize: CGSize(width: 200, height: 200),
+            contentMode: .aspectFill,
+            options: options
+        ) { result, _ in
+            DispatchQueue.main.async {
+                self.image = result
+            }
+        }
     }
 }

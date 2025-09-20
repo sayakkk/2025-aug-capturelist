@@ -1,4 +1,0 @@
-Target dependency graph (2 targets)
-Target 'Capturelist' in project 'Capturelist'
-➜ Explicit dependency on target 'CaptureListWidgetExtension' in project 'Capturelist'
-Target 'CaptureListWidgetExtension' in project 'Capturelist' (no dependencies)

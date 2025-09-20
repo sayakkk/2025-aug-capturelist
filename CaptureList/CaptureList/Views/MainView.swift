@@ -20,6 +20,8 @@ struct MainView: View {
     @State private var recentScreenshots: [PHAsset] = []
     @State private var showingPhotoPermissionAlert = false
     @State private var draggedAssetID: String?
+    @State private var refreshID = UUID()
+    @State private var appLaunchTime: Date = Date().addingTimeInterval(-86400) // 24시간 전부터
 
     var body: some View {
         NavigationView {
@@ -39,6 +41,7 @@ struct MainView: View {
                         }
                     }.padding(.horizontal)
                 }
+                .id(refreshID)
 
                 Divider().padding(.vertical, 8)
 
@@ -52,7 +55,9 @@ struct MainView: View {
                             Text(folder.name ?? "Untitled")
                         }
                         .onDrop(of: [.text], isTargeted: nil) { providers in
-                            handleDropToFolder(providers: providers, folder: folder)
+                            print("🎯 DROP DETECTED on folder: \(folder.name ?? "Unknown")")
+                            print("📦 Providers count: \(providers.count)")
+                            return handleDropToFolder(providers: providers, folder: folder)
                         }
                         .overlay(
                             draggedAssetID != nil ? 
@@ -75,6 +80,7 @@ struct MainView: View {
             }
             .onAppear {
                 checkPhotoPermission()
+                setupBackgroundNotifications()
             }
             .alert("Photo Permission Required", isPresented: $showingPhotoPermissionAlert) {
                 Button("Settings") {
@@ -112,15 +118,79 @@ struct MainView: View {
     }
 
     private func fetchRecentScreenshots() {
+        print("📱 Fetching screenshots since app launch: \(appLaunchTime)")
+        print("🕐 Current time: \(Date())")
+        
+        // 먼저 모든 이미지를 가져와서 테스트
+        let allFetchOptions = PHFetchOptions()
+        allFetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+        allFetchOptions.fetchLimit = 100
+        
+        let allAssets = PHAsset.fetchAssets(with: .image, options: allFetchOptions)
+        print("🔍 Total images in Photos library: \(allAssets.count)")
+        
+        // 모든 이미지의 정보 출력
+        allAssets.enumerateObjects { obj, index, _ in
+            if index < 10 { // 처음 10개만 출력
+                print("📸 Asset \(index): \(obj.localIdentifier), Created: \(obj.creationDate ?? Date.distantPast)")
+            }
+        }
+        
+        // 이제 필터링된 결과 가져오기
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-        fetchOptions.fetchLimit = 20
+        fetchOptions.fetchLimit = 50
+        
+        // 앱 실행 이후의 스크린샷만 가져오기
+        fetchOptions.predicate = NSPredicate(format: "creationDate >= %@", appLaunchTime as NSDate)
+        
         let assets = PHAsset.fetchAssets(with: .image, options: fetchOptions)
         var result: [PHAsset] = []
+        var filteredAssets: [PHAsset] = []
+        
+        print("🔍 Total assets found with predicate: \(assets.count)")
+        
+        // 이미 폴더로 이동된 스크린샷의 ID 목록 가져오기
+        let movedScreenshotIDs = getMovedScreenshotIDs()
+        print("📦 Already moved screenshot IDs: \(movedScreenshotIDs)")
+        
         assets.enumerateObjects { obj, _, _ in
-            result.append(obj)
+            filteredAssets.append(obj)
+            print("📸 Filtered Asset: \(obj.localIdentifier), Created: \(obj.creationDate ?? Date.distantPast)")
+            
+            // 이미 폴더로 이동되지 않은 스크린샷만 포함
+            if !movedScreenshotIDs.contains(obj.localIdentifier) {
+                result.append(obj)
+            }
         }
+        
+        print("✅ Found \(result.count) new screenshots since app launch")
+        print("📊 Total images: \(allAssets.count), Filtered: \(filteredAssets.count), Moved: \(movedScreenshotIDs.count), Available: \(result.count)")
         recentScreenshots = result
+    }
+    
+    private func getMovedScreenshotIDs() -> Set<String> {
+        let request: NSFetchRequest<Screenshot> = Screenshot.fetchRequest()
+        do {
+            let screenshots = try viewContext.fetch(request)
+            let movedIDs = Set(screenshots.compactMap { $0.phAssetID })
+            print("🗂️ Found \(movedIDs.count) screenshots already in folders")
+            return movedIDs
+        } catch {
+            print("❌ Error fetching moved screenshots: \(error)")
+            return Set()
+        }
+    }
+    
+    private func setupBackgroundNotifications() {
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.willEnterForegroundNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            print("🔄 App entering foreground - refreshing screenshots")
+            fetchRecentScreenshots()
+        }
     }
     
     private func addFolder() {
@@ -153,14 +223,30 @@ struct MainView: View {
     }
     
     private func handleDropToFolder(providers: [NSItemProvider], folder: Folder) -> Bool {
-        guard let provider = providers.first else { return false }
+        print("🎯 handleDropToFolder called for folder: \(folder.name ?? "Unknown")")
+        guard let provider = providers.first else { 
+            print("❌ No provider found")
+            return false 
+        }
         
-        provider.loadItem(forTypeIdentifier: "public.text", options: nil) { item, error in
-            guard let assetID = item as? String else { return }
+        provider.loadDataRepresentation(forTypeIdentifier: "public.text") { data, error in
+            if let error = error {
+                print("❌ Error loading data: \(error)")
+                return
+            }
+            
+            guard let data = data,
+                  let assetID = String(data: data, encoding: .utf8) else { 
+                print("❌ Could not convert data to string")
+                return 
+            }
+            
+            print("📦 Loaded assetID: \(assetID)")
             
             DispatchQueue.main.async {
                 saveScreenshotToFolder(assetID: assetID, folder: folder)
                 draggedAssetID = nil
+                print("🧹 Dragged asset ID cleared")
             }
         }
         
@@ -168,8 +254,16 @@ struct MainView: View {
     }
     
     private func saveScreenshotToFolder(assetID: String, folder: Folder) {
+        print("🔄 saveScreenshotToFolder called with assetID: \(assetID)")
+        print("📊 Current recentScreenshots count: \(recentScreenshots.count)")
+        
         // PHAsset을 찾기
-        guard let asset = recentScreenshots.first(where: { $0.localIdentifier == assetID }) else { return }
+        guard let asset = recentScreenshots.first(where: { $0.localIdentifier == assetID }) else { 
+            print("❌ Asset not found in recentScreenshots")
+            return 
+        }
+        
+        print("✅ Asset found: \(asset.localIdentifier)")
         
         // Core Data에 Screenshot 엔티티 생성
         let screenshot = Screenshot(context: viewContext)
@@ -178,14 +272,24 @@ struct MainView: View {
         screenshot.createdAt = Date()
         screenshot.folder = folder
         
-        // 최근 스크린샷 목록에서 제거
-        recentScreenshots.removeAll { $0.localIdentifier == assetID }
-        
         // Core Data 저장
         do {
             try viewContext.save()
+            print("💾 Core Data saved successfully")
+            
+            // 최근 스크린샷 목록에서 제거 - 새로운 배열 생성
+            let filteredScreenshots = recentScreenshots.filter { $0.localIdentifier != assetID }
+            recentScreenshots = filteredScreenshots
+            
+            print("🗑️ Removed from recentScreenshots. New count: \(recentScreenshots.count)")
+            
+            // UI 강제 업데이트
+            refreshID = UUID()
+            print("🔄 UI refresh triggered")
+            
         } catch {
             let nsError = error as NSError
+            print("❌ Core Data save error: \(nsError)")
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
     }
@@ -240,14 +344,32 @@ struct ScreenshotThumbnail: View {
             }
         }
         .onDrag {
+            print("🚀 DRAG STARTED for asset: \(asset.localIdentifier)")
+            print("🎯 Setting draggedAssetID: \(asset.localIdentifier)")
             isDragging = true
             draggedAssetID = asset.localIdentifier
-            return NSItemProvider(object: asset.localIdentifier as NSString)
+            let provider = NSItemProvider()
+            provider.registerDataRepresentation(forTypeIdentifier: "public.text", visibility: .all) { completion in
+                let data = asset.localIdentifier.data(using: .utf8)
+                print("📤 Providing data for asset: \(asset.localIdentifier)")
+                completion(data, nil)
+                return nil
+            }
+            return provider
         }
         .onDrop(of: [.text], isTargeted: nil) { _ in
+            // 드래그가 끝났을 때 상태를 명확히 초기화
             isDragging = false
             draggedAssetID = nil
+            print("🧹 Drag ended (onDrop): isDragging = false, draggedAssetID = nil")
             return false
+        }
+        .onChange(of: draggedAssetID) {
+            // draggedAssetID가 nil이 되면 드래그 상태 해제
+            if draggedAssetID == nil {
+                isDragging = false
+                print("🧹 Drag ended (onChange): isDragging = false")
+            }
         }
     }
     

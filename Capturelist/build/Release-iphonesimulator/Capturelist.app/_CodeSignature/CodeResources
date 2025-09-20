@@ -14,31 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		M47JIbfTNW+jW68B6yck+kKTR8o=
+		PR2t5uFrDbJHMk+Wom4r395aGKc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
-		</data>
-		<key>PlugIns/CaptureListWidgetExtension.appex/CaptureListWidgetExtension</key>
-		<data>
-		iRmNblOt4B2t4T4xLpTvhi3epFE=
-		</data>
-		<key>PlugIns/CaptureListWidgetExtension.appex/Info.plist</key>
-		<data>
-		od1jMC8+7FocgxZoFivhctYv3BM=
-		</data>
-		<key>PlugIns/CaptureListWidgetExtension.appex/Metadata.appintents/extract.actionsdata</key>
-		<data>
-		gH1DleFS646pKXGRr7TV8Bf0XWc=
-		</data>
-		<key>PlugIns/CaptureListWidgetExtension.appex/Metadata.appintents/version.json</key>
-		<data>
-		Aal8VBywJxgVuGW1TEx1MOOFgyk=
-		</data>
-		<key>PlugIns/CaptureListWidgetExtension.appex/_CodeSignature/CodeResources</key>
-		<data>
-		3G5im4/1yQo046RWUeLEB5SSKow=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,41 +35,6 @@
 			<key>hash2</key>
 			<data>
 			vQX6mu8sDW8IX0zxourLbK1WmigOL5EVGvDjD+WptTk=
-			</data>
-		</dict>
-		<key>PlugIns/CaptureListWidgetExtension.appex/CaptureListWidgetExtension</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3qfyZo+0CX3gvEyNoNvlP//5gQAcCnmST89rJHGlb68=
-			</data>
-		</dict>
-		<key>PlugIns/CaptureListWidgetExtension.appex/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gQRiPINAdeC7bKVmAB5ZlXUgW9Ck4O2ATPEBZU8Zh24=
-			</data>
-		</dict>
-		<key>PlugIns/CaptureListWidgetExtension.appex/Metadata.appintents/extract.actionsdata</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4OuG8RQ1QgvAeeZ1tyin+QK4LrBcwlaHqvfAsSosUgg=
-			</data>
-		</dict>
-		<key>PlugIns/CaptureListWidgetExtension.appex/Metadata.appintents/version.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			A0QDVV1SRCF+5P9o3nmoma7n1IbHGr9zxr26V81Z6b0=
-			</data>
-		</dict>
-		<key>PlugIns/CaptureListWidgetExtension.appex/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9ZernWCEBuUDCc5ZbOZm1tBRGks5BBPgu+9Li/egJNM=
 			</data>
 		</dict>
 	</dict>
